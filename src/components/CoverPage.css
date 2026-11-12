@@ -1,0 +1,112 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+  perspective: 800px;
+}
+
+.photo-frame {
+  width: 180px;
+  height: 180px;
+  border: 2px dashed rgba(180, 190, 255, 0.6);
+  border-radius: 50%;
+  background: rgba(20, 22, 45, 0.5);
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow:
+    0 0 25px rgba(120, 130, 255, 0.4),
+    inset 0 0 20px rgba(120, 130, 255, 0.15);
+  transition:
+    box-shadow 0.3s,
+    transform 0.15s ease-out;
+  transform-style: preserve-3d;
+}
+
+.photo-frame:hover {
+  border-color: rgba(200, 210, 255, 0.9);
+  box-shadow:
+    0 0 40px rgba(140, 150, 255, 0.6),
+    inset 0 0 20px rgba(140, 150, 255, 0.2);
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  color: #aab2e8;
+  font-size: 0.95rem;
+}
+
+.photo-input {
+  display: none;
+}
+
+.cover-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cover-text h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f4f6ff;
+  text-shadow: 0 0 18px rgba(140, 150, 255, 0.5);
+}
+
+.cover-text h2 {
+  margin: 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #c3caf5;
+}
+
+.cover-text p {
+  margin: 0;
+  color: #9aa2d4;
+}
+
+.cover-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cover-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid rgba(150, 160, 230, 0.4);
+  border-radius: 6px;
+  text-align: center;
+  background: rgba(20, 22, 45, 0.6);
+  color: #f4f6ff;
+}
+
+.cover-input::placeholder {
+  color: #8089b8;
+}
+
+.edit-button {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background: #4338ca;
+}
